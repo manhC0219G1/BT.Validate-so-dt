@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(str) {
+        regexp =/^[84][0-9]{9,}$/;
+        if(regexp.test(str)){
+            return true
+        }else {
+            return false;
+        }
+    };
+    let a = check(84123456789);
+    let b = check(23987654321)
+    document.write(a+"<br>")
+    document.write(b)
+</script>
+
+</body>
+</html>
